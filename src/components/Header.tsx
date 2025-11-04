@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import logo from '../assets/images/logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity" onClick={() => scrollToSection('home')}>
-          <img src="/images/logo.png" alt="InfraTech Logo" className="h-12 w-auto" />
+          <img src={logo} alt="InfraTech Logo" className="h-12 w-auto" />
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
