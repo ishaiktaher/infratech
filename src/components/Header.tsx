@@ -1,4 +1,4 @@
-import { Building2, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Header() {
@@ -21,15 +21,9 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity" onClick={() => scrollToSection('home')}>
-          <div className="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center">
-            <Building2 className="text-yellow-400" size={24} />
-          </div>
-          <div>
-            <h1 className="text-xl font-bold text-gray-900">InfraTech</h1>
-            <p className="text-xs text-gray-600">Construction Materials</p>
-          </div>
+          <img src="/images/logo.png" alt="InfraTech Logo" className="h-12 w-auto" />
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
