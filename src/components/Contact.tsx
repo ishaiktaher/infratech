@@ -50,6 +50,9 @@ export default function Contact() {
                   <a href="tel:9052555510" className="text-gray-600 hover:text-blue-900 transition-colors">
                     9052555510
                   </a>
+                  <a href="tel:8686837937" className="text-gray-600 hover:text-blue-900 transition-colors">
+                     8686837937
+                  </a>
                 </div>
               </div>
 
