@@ -17,8 +17,8 @@ export default function About() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
-          <div className="text-center p-8 rounded-lg bg-gray-50 hover:bg-teal-50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
-            <div className="w-16 h-16 bg-teal-700 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="text-center p-8 rounded-lg bg-gray-50 hover:bg-theme-light transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div className="w-16 h-16 bg-theme rounded-full flex items-center justify-center mx-auto mb-6">
               <Target className="text-amber-400" size={32} />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Our Vision</h3>
@@ -27,8 +27,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="text-center p-8 rounded-lg bg-gray-50 hover:bg-teal-50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
-            <div className="w-16 h-16 bg-teal-700 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="text-center p-8 rounded-lg bg-gray-50 hover:bg-theme-light transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div className="w-16 h-16 bg-theme rounded-full flex items-center justify-center mx-auto mb-6">
               <Award className="text-amber-400" size={32} />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Commitment</h3>
@@ -37,8 +37,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="text-center p-8 rounded-lg bg-gray-50 hover:bg-teal-50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
-            <div className="w-16 h-16 bg-teal-700 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="text-center p-8 rounded-lg bg-gray-50 hover:bg-theme-light transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div className="w-16 h-16 bg-theme rounded-full flex items-center justify-center mx-auto mb-6">
               <Lightbulb className="text-amber-400" size={32} />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Innovation</h3>

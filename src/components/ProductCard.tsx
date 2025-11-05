@@ -1,41 +1,46 @@
-import { ArrowRight, CheckCircle2, LucideIcon } from 'lucide-react';
+import type { FC } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import ProductImage from './ProductImage';
 
-interface ProductCardProps {
+type ProductCardProps = {
+  id: string;
   title: string;
   description: string;
-  icon: LucideIcon;
   features: string[];
-}
+  image?: string;
+};
 
-export default function ProductCard({ title, description, icon: Icon, features }: ProductCardProps) {
+const ProductCard: FC<ProductCardProps> = ({ id, title, description, image }) => {
+  const themeColor = 'rgb(27, 171, 179)';
+  
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl group">
-      <div className="bg-gradient-to-br from-teal-700 to-teal-600 p-8 text-center">
-        <div className="w-20 h-20 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-          <Icon className="text-teal-700" size={40} />
+    <Link to={`/product/${id}`} className="block h-full">
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl group cursor-pointer h-full flex flex-col">
+        <div className="w-full aspect-[4/3] overflow-hidden">
+          {image ? (
+            <ProductImage src={image} alt={title} className="w-full h-full object-contain p-4" />
+          ) : (
+            <div className="w-full h-full" style={{ background: `linear-gradient(to bottom right, ${themeColor}, ${themeColor}cc)` }} />
+          )}
         </div>
-        <h3 className="text-2xl font-bold text-white">{title}</h3>
-      </div>
-
-      <div className="p-6">
-        <p className="text-gray-700 mb-6 leading-relaxed">
-          {description}
-        </p>
-
-        <div className="space-y-3 mb-6">
-          {features.map((feature, index) => (
-            <div key={index} className="flex items-center gap-2">
-              <CheckCircle2 className="text-teal-600 flex-shrink-0" size={20} />
-              <span className="text-gray-600 text-sm">{feature}</span>
-            </div>
-          ))}
+        <div className="p-6 flex flex-col flex-grow">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{title}</h3>
+          <p className="text-gray-700 mb-6 leading-relaxed line-clamp-3">{description}</p>
+          
+          <div className="mt-auto">
+            <button 
+              className="w-full text-white font-semibold py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group hover:opacity-90"
+              style={{ backgroundColor: themeColor }}
+            >
+              <span>View Details</span>
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
+            </button>
+          </div>
         </div>
-
-        <button className="w-full bg-teal-700 hover:bg-amber-400 text-white hover:text-teal-700 font-semibold py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group">
-          <span>Know More</span>
-          <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
-        </button>
       </div>
-    </div>
+    </Link>
   );
-}
+};
+
+export default ProductCard;

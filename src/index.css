@@ -5,12 +5,42 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --theme-color: rgb(27, 171, 179);
+    --theme-color-light: rgba(27, 171, 179, 0.1);
+    --theme-color-dark: rgba(27, 171, 179, 0.9);
+  }
+
   body {
     font-family: 'Inter', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .bg-theme {
+    background-color: var(--theme-color);
+  }
+  .bg-theme-light {
+    background-color: var(--theme-color-light);
+  }
+  .text-theme {
+    color: var(--theme-color);
+  }
+  .hover\:bg-theme:hover {
+    background-color: var(--theme-color);
+  }
+  .hover\:bg-theme-light:hover {
+    background-color: var(--theme-color-light);
+  }
+  .hover\:text-theme:hover {
+    color: var(--theme-color);
+  }
+  .border-theme {
+    border-color: var(--theme-color);
   }
 }
 

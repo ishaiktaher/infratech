@@ -11,6 +11,17 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Format the message for WhatsApp
+    const whatsappMessage = `*New Inquiry from InfraTech Website*\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
+    
+    // Create WhatsApp URL with the formatted message
+    const whatsappUrl = `https://wa.me/919052555510?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+    
+    // Reset form
     setSubmitted(true);
     setTimeout(() => {
       setFormData({ name: '', email: '', message: '' });
@@ -41,36 +52,36 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <div className="space-y-6 mb-8">
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-teal-50 transition-colors duration-300">
-                <div className="w-12 h-12 bg-teal-700 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-theme-light transition-colors duration-300">
+                <div className="w-12 h-12 bg-theme rounded-full flex items-center justify-center flex-shrink-0">
                   <Phone className="text-amber-400" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                  <a href="tel:9052555510" className="text-gray-600 hover:text-teal-700 transition-colors">
+                  <a href="tel:9052555510" className="text-gray-600 hover:text-theme transition-colors">
                     9052555510
                   </a>
                   <br></br>
-                  <a href="tel:8686837937" className="text-gray-600 hover:text-teal-700 transition-colors">
+                  <a href="tel:8686837937" className="text-gray-600 hover:text-theme transition-colors">
                      8686837937
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-teal-50 transition-colors duration-300">
-                <div className="w-12 h-12 bg-teal-700 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-theme-light transition-colors duration-300">
+                <div className="w-12 h-12 bg-theme rounded-full flex items-center justify-center flex-shrink-0">
                   <Mail className="text-amber-400" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:infratechmaterials@gmail.com" className="text-gray-600 hover:text-teal-700 transition-colors break-all">
+                  <a href="mailto:infratechmaterials@gmail.com" className="text-gray-600 hover:text-theme transition-colors break-all">
                     infratechmaterials@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-teal-50 transition-colors duration-300">
-                <div className="w-12 h-12 bg-teal-700 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-theme-light transition-colors duration-300">
+                <div className="w-12 h-12 bg-theme rounded-full flex items-center justify-center flex-shrink-0">
                   <MapPin className="text-amber-400" size={24} />
                 </div>
                 <div>
@@ -148,13 +159,13 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={submitted}
-                className="w-full bg-teal-700 hover:bg-amber-400 text-white hover:text-teal-700 font-bold py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-theme hover:bg-amber-400 text-white hover:text-theme font-bold py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {submitted ? (
-                  <span>Message Sent!</span>
+                  <span>Opening WhatsApp...</span>
                 ) : (
                   <>
-                    <span>Send Message</span>
+                    <span>Send Message via WhatsApp</span>
                     <Send className="group-hover:translate-x-1 transition-transform" size={18} />
                   </>
                 )}

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://infratechmaterials.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
