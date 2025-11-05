@@ -10,7 +10,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'linear-gradient(rgba(28, 58, 87, 0.85), rgba(44, 95, 138, 0.75)), url(https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: 'linear-gradient(rgba(15, 118, 110, 0.85), rgba(13, 148, 136, 0.75)), url(https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=1920)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="animate-fadeIn">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Building Stronger Futures with<br />
-            <span className="text-yellow-400">Advanced Construction Materials</span>
+            <span className="text-amber-400">Advanced Construction Materials</span>
           </h1>
 
           <p className="text-xl md:text-2xl mb-12 text-gray-100 max-w-3xl mx-auto">
@@ -30,7 +30,7 @@ export default function Hero() {
 
           <button
             onClick={scrollToProducts}
-            className="group bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 mx-auto"
+            className="group bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 mx-auto"
           >
             Explore Our Products
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-50 to-transparent z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent z-10" />
     </section>
   );
 }

@@ -32,7 +32,7 @@ export default function Contact() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Get In Touch
           </h2>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-amber-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Have questions about our products? We're here to help you build better.
           </p>
@@ -41,37 +41,37 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <div className="space-y-6 mb-8">
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors duration-300">
-                <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="text-yellow-400" size={24} />
+              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-teal-50 transition-colors duration-300">
+                <div className="w-12 h-12 bg-teal-700 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone className="text-amber-400" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                  <a href="tel:9052555510" className="text-gray-600 hover:text-blue-900 transition-colors">
+                  <a href="tel:9052555510" className="text-gray-600 hover:text-teal-700 transition-colors">
                     9052555510
                   </a>
                   <br></br>
-                  <a href="tel:8686837937" className="text-gray-600 hover:text-blue-900 transition-colors">
+                  <a href="tel:8686837937" className="text-gray-600 hover:text-teal-700 transition-colors">
                      8686837937
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors duration-300">
-                <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="text-yellow-400" size={24} />
+              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-teal-50 transition-colors duration-300">
+                <div className="w-12 h-12 bg-teal-700 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mail className="text-amber-400" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:infratechmaterials@gmail.com" className="text-gray-600 hover:text-blue-900 transition-colors break-all">
+                  <a href="mailto:infratechmaterials@gmail.com" className="text-gray-600 hover:text-teal-700 transition-colors break-all">
                     infratechmaterials@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors duration-300">
-                <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="text-yellow-400" size={24} />
+              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-teal-50 transition-colors duration-300">
+                <div className="w-12 h-12 bg-teal-700 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin className="text-amber-400" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Address</h3>
@@ -108,7 +108,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400 focus:outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500 focus:outline-none transition-all"
                   placeholder="Your name"
                 />
               </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400 focus:outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500 focus:outline-none transition-all"
                   placeholder="your@email.com"
                 />
               </div>
@@ -140,7 +140,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400 focus:outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500 focus:outline-none transition-all resize-none"
                   placeholder="How can we help you?"
                 />
               </div>
@@ -148,7 +148,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={submitted}
-                className="w-full bg-blue-900 hover:bg-yellow-400 text-white hover:text-blue-900 font-bold py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-teal-700 hover:bg-amber-400 text-white hover:text-teal-700 font-bold py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {submitted ? (
                   <span>Message Sent!</span>

@@ -32,30 +32,30 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="text-gray-700 font-medium hover:text-blue-900 transition-colors relative group"
+              className="text-gray-700 font-medium hover:text-teal-700 transition-colors relative group"
             >
               {link.label}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 group-hover:w-full transition-all duration-300"></span>
             </button>
           ))}
         </nav>
 
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-gray-900 hover:text-blue-900 transition-colors"
+          className="md:hidden text-gray-900 hover:text-teal-700 transition-colors"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {isMenuOpen && (
-        <nav className="md:hidden bg-white border-t border-gray-200 py-4 px-6 animate-fadeIn">
+        <nav className="md:hidden bg-white border-t border-teal-200 py-4 px-6 animate-fadeIn">
           <div className="space-y-3">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left px-4 py-2 text-gray-700 font-medium hover:bg-gray-100 rounded-lg transition-colors"
+                className="block w-full text-left px-4 py-2 text-gray-700 font-medium hover:bg-teal-50 rounded-lg transition-colors"
               >
                 {link.label}
               </button>
