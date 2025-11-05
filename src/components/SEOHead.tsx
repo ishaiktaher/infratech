@@ -46,6 +46,8 @@ export default function SEOHead({ title, description, image, url }: SEOHeadProps
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#1BAB83" />
+      <link rel="icon" type="image/png" href="/favicon.png" />
+      <link rel="apple-touch-icon" href="/favicon.png" />
       
       {/* Language and region */}
       <meta name="language" content="English" />
