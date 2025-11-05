@@ -11,6 +11,8 @@ import FAQ from './components/FAQ';
 import FloatingCallButton from './components/FloatingCallButton';
 import BackToTop from './components/BackToTop';
 import SEOHead from './components/SEOHead';
+import BlogList from './components/BlogList';
+import BlogPost from './pages/BlogPost';
 
 const HomePage = () => {
   return (
@@ -53,6 +55,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/product/:productId" element={<ProductPageWrapper />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
           <Footer />
           <FloatingCallButton />

@@ -31,6 +31,7 @@ export default function Header() {
     { label: 'Home', id: 'home' },
     { label: 'About', id: 'about' },
     { label: 'Products', id: 'products' },
+    { label: 'Blog', path: '/blog' },
     { label: 'Contact', id: 'contact' }
   ];
 
@@ -54,7 +55,7 @@ export default function Header() {
           {navLinks.map((link) => (
             <button
               key={link.id}
-              onClick={() => scrollToSection(link.id)}
+              onClick={() => link.path ? navigate(link.path) : scrollToSection(link.id!)}
               className="text-gray-700 font-medium hover:text-theme transition-colors relative group"
             >
               {link.label}
@@ -77,7 +78,14 @@ export default function Header() {
             {navLinks.map((link) => (
               <button
                 key={link.id}
-                onClick={() => scrollToSection(link.id)}
+                onClick={() => {
+                  if (link.path) {
+                    navigate(link.path);
+                    setIsMenuOpen(false);
+                  } else {
+                    scrollToSection(link.id!);
+                  }
+                }}
                 className="block w-full text-left px-4 py-2 text-gray-700 font-medium hover:bg-theme-light rounded-lg transition-colors"
               >
                 {link.label}
