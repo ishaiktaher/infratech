@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
         title="Privacy Policy - InfraTech Construction Materials"
         description="Privacy Policy for InfraTech Construction Materials. Learn about how we collect, use, and protect your personal information."
       />
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-16">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
         
         <div className="prose max-w-none">
