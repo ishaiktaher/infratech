@@ -10,9 +10,16 @@ import ProductPage from './pages/ProductPage';
 import FAQ from './components/FAQ';
 import FloatingCallButton from './components/FloatingCallButton';
 import BackToTop from './components/BackToTop';
+import ScrollToTop from './components/ScrollToTop';
 import SEOHead from './components/SEOHead';
 import BlogList from './components/BlogList';
 import BlogPost from './pages/BlogPost';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
+import NotFound from './pages/NotFound';
+import { AdminProvider } from './context/AdminContext';
+import ProtectedRoute from './components/ProtectedRoute';
+// import Testimonials from './components/Testimonials';
 
 const HomePage = () => {
   return (
@@ -24,6 +31,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Products />
+      {/* <Testimonials /> */}
       <FAQ />
       <Contact />
     </>
@@ -49,20 +57,38 @@ const ProductPageWrapper = () => {
 function App() {
   return (
     <HelmetProvider>
-      <Router>
-        <div className="min-h-screen bg-white">
-          <Header />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/product/:productId" element={<ProductPageWrapper />} />
-            <Route path="/blog" element={<BlogList />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-          </Routes>
-          <Footer />
-          <FloatingCallButton />
-          <BackToTop />
-        </div>
-      </Router>
+      <AdminProvider>
+        <Router>
+          <ScrollToTop />
+          <div className="min-h-screen bg-white">
+            <Header />
+            <Routes>
+              {/* Public routes */}
+              <Route path="/" element={<HomePage />} />
+              <Route path="/product/:productId" element={<ProductPageWrapper />} />
+              <Route path="/blog" element={<BlogList />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/admin/login" element={<AdminLogin />} />
+              
+              {/* Protected admin routes */}
+              <Route 
+                path="/admin/dashboard" 
+                element={
+                  <ProtectedRoute>
+                    <AdminDashboard />
+                  </ProtectedRoute>
+                } 
+              />
+
+              {/* 404 route - must be last */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+            <FloatingCallButton />
+            <BackToTop />
+          </div>
+        </Router>
+      </AdminProvider>
     </HelmetProvider>
   );
 }
