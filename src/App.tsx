@@ -19,6 +19,8 @@ import AdminDashboard from './pages/AdminDashboard';
 import NotFound from './pages/NotFound';
 import { AdminProvider } from './context/AdminContext';
 import ProtectedRoute from './components/ProtectedRoute';
+import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 // import Testimonials from './components/Testimonials';
 
 const HomePage = () => {
@@ -69,6 +71,9 @@ function App() {
               <Route path="/blog" element={<BlogList />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
               
               {/* Protected admin routes */}
               <Route 

@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const faqs = [
   {
     question: "What types of construction materials do you offer?",
-    answer: "We offer a comprehensive range of construction materials including Ready Mix Plaster, Wall Putty, and various other high-quality construction products designed for both residential and commercial projects."
+    answer: "We offer a comprehensive range of construction materials including Ready Mix Plaster, Brick Adhesive, Waterproofing products and various other high-quality construction products designed for both residential and commercial projects."
   },
   {
     question: "How do I choose the right product for my project?",
