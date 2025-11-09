@@ -95,8 +95,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/product/brush-coat-2k" className="text-white/90 hover:text-white transition-colors text-sm">
-                  Brush Coat 2K
+                <Link to="/product/tile-adhesive" className="text-white/90 hover:text-white transition-colors text-sm">
+                  Tile Adhesive
                 </Link>
               </li>
             </ul>

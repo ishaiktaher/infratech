@@ -1,10 +1,11 @@
 import { FC, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { products } from '../data/products';
 
 const ProductPage: FC = () => {
   const { productId } = useParams();
+  const navigate = useNavigate();
   const product = products.find(p => p.id === productId);
   const themeColor = 'rgb(27, 171, 179)';
 
@@ -37,13 +38,15 @@ const ProductPage: FC = () => {
     <div className="min-h-screen pt-32 pb-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-8">
-          <Link
-            to="/#products"
+          <button
+            onClick={() => {
+              navigate('/', { state: { scrollToProducts: true } });
+            }}
             className="inline-flex items-center gap-2 text-gray-600 hover:text-theme transition-colors"
           >
             <ArrowLeft size={20} />
             <span>Back to Products</span>
-          </Link>
+          </button>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -82,12 +85,14 @@ const ProductPage: FC = () => {
             </div>
 
             <div className="mt-12">
-              <a
-                href="#contact"
+              <button
+                onClick={() => {
+                  navigate('/', { state: { scrollToContact: true } });
+                }}
                 className="inline-block bg-theme text-white px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
               >
                 Contact for Price
-              </a>
+              </button>
             </div>
           </div>
         </div>

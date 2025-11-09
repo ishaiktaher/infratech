@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -24,6 +25,27 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 // import Testimonials from './components/Testimonials';
 
 const HomePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Only handle scroll to section when coming from navigation with state
+    if (location.state) {
+      const sectionId = location.state.scrollToContact ? 'contact' : 
+                       location.state.scrollToProducts ? 'products' : '';
+      
+      if (sectionId) {
+        setTimeout(() => {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+            // Clear the state after scrolling
+            window.history.replaceState({}, document.title, window.location.pathname);
+          }
+        }, 100);
+      }
+    }
+  }, [location.state]);
+
   return (
     <>
       <SEOHead
