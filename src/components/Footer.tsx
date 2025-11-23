@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex items-center">
               <img 
                 src={logo} 
-                alt="InfraTech Logo" 
+                alt="CemStrong Logo" 
                 className="h-16 w-auto" 
               />
             </div>
@@ -109,7 +109,7 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="text-white/90 flex-shrink-0 mt-1" size={18} />
                 <span className="text-white/90 text-sm leading-relaxed">
-                  Main Road Kaithalapur, Near Madhapur, Hyderabad, Telangana - 500081
+                  Fatima Warehouse, Goods Shed Road, Moosapet - 500081
                 </span>
               </li>
               <li className="flex items-center space-x-3">
@@ -126,8 +126,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="text-white/90" size={18} />
-                <a href="mailto:info@infratechmaterials.com" className="text-white/90 hover:text-white transition-colors text-sm">
-                  infratechmaterials@gmail.com
+                <a href="mailto:cemstrongproducts@gmail.com" className="text-white/90 hover:text-white transition-colors text-sm">
+                  cemstrongproducts@gmail.com
                 </a>
               </li>
             </ul>
@@ -140,7 +140,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="md:flex md:items-center md:justify-between">
             <p className="text-sm text-white/90">
-              &copy; {currentYear} InfraTech Construction Materials. All rights reserved.
+              &copy; {currentYear} CemStrong Construction Products. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0">
               <div className="flex space-x-6 text-sm text-white/90">

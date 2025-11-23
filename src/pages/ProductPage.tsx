@@ -12,7 +12,7 @@ const ProductPage: FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     if (product) {
-      document.title = `${product.title} - InfraTech Construction Materials`;
+      document.title = `${product.title} - CemStrong Construction Products`;
       // Update meta description for SEO
       const metaDescription = document.querySelector('meta[name="description"]');
       if (metaDescription) {

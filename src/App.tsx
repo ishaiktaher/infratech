@@ -50,7 +50,7 @@ const HomePage = () => {
     <>
       <SEOHead
         title="Home"
-        description="InfraTech Construction Materials - Building stronger futures with advanced construction materials. Trusted quality, smart innovation, sustainable strength."
+        description="CemStrong Construction Products - Building stronger futures with advanced construction products. Trusted quality, smart innovation, sustainable strength."
       />
       <Hero />
       <About />
@@ -70,7 +70,7 @@ const ProductPageWrapper = () => {
     <>
       <SEOHead
         title={`${productId} - Construction Materials`}
-        description={`High-quality ${productId} from InfraTech Construction Materials. Discover our premium construction materials for your building needs.`}
+        description={`High-quality ${productId} from CemStrong Construction Products. Discover our premium construction products for your building needs.`}
         url={location.pathname}
       />
       <ProductPage />

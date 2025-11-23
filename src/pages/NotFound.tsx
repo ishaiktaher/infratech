@@ -7,7 +7,7 @@ const NotFound = () => {
     <>
       <SEOHead
         title="404 - Page Not Found"
-        description="The page you're looking for doesn't exist. Return to InfraTech Construction Materials homepage."
+        description="The page you're looking for doesn't exist. Return to CemStrong Construction Products homepage."
       />
       <div className="min-h-[70vh] flex items-center justify-center px-4 py-16 bg-gray-50">
         <div className="text-center max-w-lg mx-auto">

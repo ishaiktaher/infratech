@@ -15,7 +15,7 @@ const testimonials: Testimonial[] = [
     name: "Rajesh Kumar",
     role: "Project Manager",
     company: "Skyline Constructions",
-    content: "We've been using InfraTech's ReadyMix Plaster for our high-rise projects, and the results have been outstanding. The consistency and finish quality are unmatched. It's cut our application time by 40%.",
+    content: "We've been using CemStrong's ReadyMix Plaster for our high-rise projects, and the results have been outstanding. The consistency and finish quality are unmatched. It's cut our application time by 40%.",
     image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=100"
   },
   {
@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
     name: "Mohammad Ali",
     role: "Construction Supervisor",
     company: "Elite Construction Co.",
-    content: "I've been in construction for 15 years, and InfraTech's products are among the best I've worked with. Their technical support team is always available to help, and the product quality is consistently excellent.",
+    content: "I've been in construction for 15 years, and CemStrong's products are among the best I've worked with. Their technical support team is always available to help, and the product quality is consistently excellent.",
     image: "https://images.pexels.com/photos/8961095/pexels-photo-8961095.jpeg?auto=compress&cs=tinysrgb&w=100"
   },
   {
@@ -39,7 +39,7 @@ const testimonials: Testimonial[] = [
     name: "Arun Sharma",
     role: "Managing Director",
     company: "Premium Developers",
-    content: "We exclusively use InfraTech's products for all our premium residential projects. The quality speaks for itself, and our clients are always impressed with the final finish. The cost savings on labor are an added bonus.",
+    content: "We exclusively use CemStrong's products for all our premium residential projects. The quality speaks for itself, and our clients are always impressed with the final finish. The cost savings on labor are an added bonus.",
     image: "https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=100"
   }
 ];
@@ -90,7 +90,7 @@ export default function Testimonials() {
 
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-600">
-            Join hundreds of satisfied customers who trust InfraTech for their construction needs
+            Join hundreds of satisfied customers who trust CemStrong for their construction needs
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-8 opacity-70">
             <img

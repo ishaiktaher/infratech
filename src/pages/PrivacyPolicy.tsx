@@ -4,8 +4,8 @@ const PrivacyPolicy = () => {
   return (
     <>
       <SEOHead
-        title="Privacy Policy - InfraTech Construction Materials"
-        description="Privacy Policy for InfraTech Construction Materials. Learn about how we collect, use, and protect your personal information."
+        title="Privacy Policy - CemStrong Construction Products"
+        description="Privacy Policy for CemStrong Construction Products. Learn about how we collect, use, and protect your personal information."
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-16">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
             <p className="mb-4">
-              At InfraTech Construction Materials, we respect your privacy and are committed to protecting your personal data. 
+              At CemStrong Construction Products, we respect your privacy and are committed to protecting your personal data. 
               This privacy policy explains how we collect, use, and safeguard your information when you visit our website.
             </p>
           </section>
@@ -82,7 +82,7 @@ const PrivacyPolicy = () => {
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
             <p className="mb-4">
-              Email: infratechmaterials@gmail.com<br />
+              Email: cemstrongproducts@gmail.com<br />
               Phone: +91 9052555510<br />
               Address: Main Road Kaithalapur, Near Madhapur, Hyderabad, Telangana - 500081
             </p>

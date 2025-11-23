@@ -6,11 +6,11 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            About InfraTech Construction Materials
+            About CemStrong Construction Products
           </h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            InfraTech Construction Materials delivers innovative, durable, and ready-to-use products
+            CemStrong Construction Products delivers innovative, durable, and ready-to-use products
             designed to simplify and strengthen modern construction. Our goal is to empower builders
             and engineers with high-performance materials that ensure long-lasting quality and precision.
           </p>

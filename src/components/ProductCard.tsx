@@ -30,8 +30,7 @@ const ProductCard: FC<ProductCardProps> = ({ id, title, description, image }) =>
           
           <div className="mt-auto">
             <button 
-              className="w-full text-white font-semibold py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group hover:opacity-90"
-              style={{ backgroundColor: themeColor }}
+              className="w-full text-white font-semibold py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group hover:opacity-90 bg-theme"
             >
               <span>View Details</span>
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />

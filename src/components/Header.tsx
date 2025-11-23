@@ -48,7 +48,7 @@ export default function Header() {
             }
           }}
         >
-          <img src={logo} alt="InfraTech Logo" className="h-20 w-auto" />
+          <img src={logo} alt="CemStrong Logo" className="h-20 w-auto" />
         </div>
 
         <nav className="hidden md:flex items-center gap-8">

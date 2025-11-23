@@ -4,8 +4,8 @@ const TermsOfService = () => {
   return (
     <>
       <SEOHead
-        title="Terms of Service - InfraTech Construction Materials"
-        description="Terms of Service for InfraTech Construction Materials. Read about our terms, conditions, and policies."
+        title="Terms of Service - CemStrong Construction Products"
+        description="Terms of Service for CemStrong Construction Products. Read about our terms, conditions, and policies."
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-16">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Terms of Service</h1>
@@ -27,7 +27,7 @@ const TermsOfService = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Products and Services</h2>
             <p className="mb-4">
-              All products and services offered by InfraTech Construction Materials are subject to:
+              All products and services offered by CemStrong Construction Products are subject to:
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li>Availability</li>
@@ -41,14 +41,14 @@ const TermsOfService = () => {
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Use License</h2>
             <p className="mb-4">
               Permission is granted to temporarily access the materials (information or software) on 
-              InfraTech Construction Materials' website for personal, non-commercial viewing only.
+              CemStrong Construction Products' website for personal, non-commercial viewing only.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Disclaimer</h2>
             <p className="mb-4">
-              The materials on InfraTech Construction Materials' website are provided on an 'as is' basis. 
+              The materials on CemStrong Construction Products' website are provided on an 'as is' basis. 
               We make no warranties, expressed or implied, and hereby disclaim and negate all other 
               warranties including, without limitation:
             </p>
@@ -81,7 +81,7 @@ const TermsOfService = () => {
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Intellectual Property</h2>
             <p className="mb-4">
               All content included on this website, such as text, graphics, logos, images, and software, 
-              is the property of InfraTech Construction Materials or its content suppliers and protected 
+              is the property of CemStrong Construction Products or its content suppliers and protected 
               by copyright laws.
             </p>
           </section>
@@ -92,11 +92,12 @@ const TermsOfService = () => {
               If you have any questions about these Terms of Service, please contact us at:
             </p>
             <p className="mb-4">
-              Email: infratechmaterials@gmail.com<br />
+              Email: cemstrongproducts@gmail.com<br />
               Phone: +91 9052555510<br />
               Address: Main Road Kaithalapur, Near Madhapur, Hyderabad, Telangana - 500081
             </p>
           </section>
+          
         </div>
       </div>
     </>

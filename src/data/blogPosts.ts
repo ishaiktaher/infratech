@@ -73,7 +73,7 @@ Ready-mix plaster offers numerous advantages over traditional plastering methods
 
 Contact us to learn more about our premium ready-mix plaster products and how they can benefit your construction projects.
     `,
-    author: 'InfraTech Team',
+    author: 'CemStrong Team',
     date: 'November 6, 2025',
     readTime: '6 min read',
     tags: ['ReadyMix Plaster', 'Construction', 'How-to Guide'],
@@ -192,9 +192,9 @@ Not protecting adjacent surfaces can lead to cleanup issues.
 
 Avoiding these common mistakes will help ensure a successful plastering job. For best results, always use quality ready-mix plaster and follow proper application techniques.
 
-Contact InfraTech for high-quality ready-mix plaster products and expert advice on proper application techniques.
+Contact CemStrong for high-quality ready-mix plaster products and expert advice on proper application techniques.
     `,
-    author: 'InfraTech Team',
+    author: 'CemStrong Team',
     date: 'November 5, 2025',
     readTime: '8 min read',
     tags: ['Plastering Tips', 'Construction', 'Troubleshooting'],
@@ -290,9 +290,9 @@ Brick adhesive is a specially formulated product designed to bond bricks and blo
 
 Brick adhesive offers numerous advantages over traditional mortar, making it an excellent choice for modern construction projects. Its strength, efficiency, and cost-effectiveness make it increasingly popular among construction professionals.
 
-Contact InfraTech for high-quality brick adhesive products and expert application guidance.
+Contact CemStrong for high-quality brick adhesive products and expert application guidance.
     `,
-    author: 'InfraTech Team',
+    author: 'CemStrong Team',
     date: 'November 4, 2025',
     readTime: '7 min read',
     tags: ['Brick Adhesive', 'Construction', 'Innovation'],

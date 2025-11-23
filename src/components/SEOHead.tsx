@@ -8,15 +8,15 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({ title, description, image, url }: SEOHeadProps) {
-  const siteUrl = 'https://infratechmaterials.com'; // Replace with your actual domain
+  const siteUrl = 'https://www.cemstrong.com'; // Updated domain for CemStrong
   const fullUrl = url ? `${siteUrl}${url}` : siteUrl;
   const defaultImage = `${siteUrl}/logo.png`; // Replace with your actual default image path
 
   return (
     <Helmet>
       {/* Basic metadata */}
-      <title>{`${title} | InfraTech - Premium ReadyMix Plaster & Brick Adhesive Manufacturer`}</title>
-      <meta name="description" content={`${description} Leading manufacturer of ReadyMix Plaster and Brick Adhesive in Hyderabad. High-quality construction materials for professional builders and contractors.`} />
+      <title>{`${title} | CemStrong - Premium ReadyMix Plaster & Construction Products Manufacturer`}</title>
+      <meta name="description" content={`${description} Leading manufacturer under CemStrong Construction Products in Hyderabad. High-quality construction materials for professional builders and contractors.`} />
       <link rel="canonical" href={fullUrl} />
 
       {/* Keywords and topic relevance */}
@@ -32,7 +32,7 @@ export default function SEOHead({ title, description, image, url }: SEOHeadProps
       <meta property="og:title" content={`${title} | Premium ReadyMix Plaster & Construction Materials`} />
       <meta property="og:description" content={`${description} Top manufacturer of ReadyMix Plaster and Brick Adhesive in Hyderabad.`} />
       <meta property="og:image" content={image || defaultImage} />
-      <meta property="og:site_name" content="InfraTech Construction Materials" />
+      <meta property="og:site_name" content="CemStrong Construction Products" />
       <meta property="og:locale" content="en_IN" />
 
       {/* Twitter */}
@@ -59,10 +59,10 @@ export default function SEOHead({ title, description, image, url }: SEOHeadProps
         {`{
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "InfraTech Construction Materials",
+          "name": "CemStrong Construction Products",
           "url": "${siteUrl}",
           "logo": "${defaultImage}",
-          "description": "Leading manufacturer of ReadyMix Plaster and Brick Adhesive in Hyderabad",
+          "description": "Leading manufacturer under CemStrong Construction Products in Hyderabad",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Madhapur, Hitech City",
@@ -80,7 +80,7 @@ export default function SEOHead({ title, description, image, url }: SEOHeadProps
             "@type": "ContactPoint",
             "telephone": "+91-9052555510",
             "contactType": "sales",
-            "email": "infratechmaterials@gmail.com",
+            "email": "cemstrongproducts@gmail.com",
             "areaServed": "IN"
           },
           "sameAs": [
@@ -96,11 +96,11 @@ export default function SEOHead({ title, description, image, url }: SEOHeadProps
           "description": "High-quality ReadyMix Plaster for professional construction projects. Pre-mixed, easy to apply, and superior finish.",
           "brand": {
             "@type": "Brand",
-            "name": "InfraTech"
+            "name": "CemStrong"
           },
           "manufacturer": {
             "@type": "Organization",
-            "name": "InfraTech Construction Materials"
+            "name": "CemStrong Construction Products"
           },
           "category": "Construction Materials > Plaster",
           "offers": {

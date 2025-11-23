@@ -6,9 +6,13 @@
 
 @layer base {
   :root {
-    --theme-color: rgb(27, 171, 179);
-    --theme-color-light: rgba(27, 171, 179, 0.1);
-    --theme-color-dark: rgba(27, 171, 179, 0.9);
+    /* CemStrong brand colors */
+    --theme-color: #1a3e73; /* brandBlue 600 */
+    --theme-color-light: rgba(58, 91, 140, 0.08); /* transparent brandBlue 500 */
+    --theme-color-dark: #06182e; /* brandBlue 900 */
+
+    --accent-gold: #f4b728; /* brandGold 500 */
+    --accent-gold-dark: #d9981b; /* brandGold 600 */
   }
 
   body {

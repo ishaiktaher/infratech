@@ -13,7 +13,7 @@ export default function Contact() {
     e.preventDefault();
     
     // Format the message for WhatsApp
-    const whatsappMessage = `*New Inquiry from InfraTech Website*\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
+    const whatsappMessage = `*New Inquiry from CemStrong Website*\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
     
     // Create WhatsApp URL with the formatted message
     const whatsappUrl = `https://wa.me/919052555510?text=${encodeURIComponent(whatsappMessage)}`;
@@ -74,8 +74,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:infratechmaterials@gmail.com" className="text-gray-600 hover:text-theme transition-colors break-all">
-                    infratechmaterials@gmail.com
+                  <a href="mailto:cemstrongproducts@gmail.com" className="text-gray-600 hover:text-theme transition-colors break-all">
+                    cemstrongproducts@gmail.com
                   </a>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Address</h3>
                   <p className="text-gray-600">
-                    Madhapur, Hitech City, Hyderabad
+                   Fatima Warehouse, Goods Shed Road, Moosapet - 500081
                   </p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Contact() {
 
             <div className="rounded-xl overflow-hidden shadow-lg h-64">
               <iframe
-                title="InfraTech Location"
+                title="CemStrong Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4657644753764!2d78.38871!3d17.448523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c8c1a72b7d%3A0x6c0c3d8b5d7f4e7!2sMadhapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1234567890"
                 width="100%"
                 height="100%"
