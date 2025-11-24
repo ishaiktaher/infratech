@@ -1,6 +1,6 @@
 import plasterMaster from '../assets/images/products/plaster-master.png';
 import brickAdhesive from '../assets/images/products/brick-adhesive.png';
-// import brushCoat from '../assets/images/products/brush-coat.png';
+import brushCoat from '../assets/images/products/brush-coat.png';
 import tileAdhesive from '../assets/images/products/tile-adhesive.png';
 
 export interface Product {
@@ -57,5 +57,20 @@ export const products: Product[] = [
     ],
     image: tileAdhesive,
     metaDescription: 'Professional-grade tile adhesive for ceramic, porcelain, and natural stone tiles. Features strong bonding and water resistance for interior and exterior applications.'
+  },
+  {
+    id: 'brush-coat',
+    title: 'Brush Coat 2K',
+    description: 'A two-component waterproof coating designed to protect surfaces against moisture, cracks, and weathering. Ideal for bathrooms, basements, terraces, and roofs where superior water protection is required.',
+    features: [
+      'Waterproof',
+      'Crack Protection',
+      'Weather Resistant',
+      'UV Stable',
+      'Chemical Resistant',
+      'Easy to Apply'
+    ],
+    image: brushCoat,
+    metaDescription: 'Two-component waterproof coating for superior moisture protection. Ideal for bathrooms, basements and areas requiring long-lasting waterproofing.'
   }
 ];

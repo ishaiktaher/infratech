@@ -34,7 +34,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/infratechmaterials"
+                href="https://www.facebook.com/cemstrongproducts"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/90 hover:text-white transition-colors"
@@ -42,7 +42,7 @@ export default function Footer() {
                 <Facebook size={20} />
               </a>
               <a
-                href="https://instagram.com/infratechmaterials/"
+                href="https://instagram.com/cemstrongproducts/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/90 hover:text-white transition-colors"
@@ -50,7 +50,7 @@ export default function Footer() {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://www.youtube.com/@Infratechmaterials"
+                href="https://www.youtube.com/@cemstrong"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/90 hover:text-white transition-colors"
@@ -58,17 +58,17 @@ export default function Footer() {
                 <Youtube size={20} />
               </a>
               <a
-                href="https://x.com/infratechbuilds"
+                href="https://x.com/cemstrongbuilds"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/90 hover:text-white transition-colors"
               >
                 <Twitter size={20} />
               </a>
-              {/* <a href="https://x.com/infratechbuilds" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/cemstrong/" target="_blank" rel="noopener noreferrer"
                 className="text-white/90 hover:text-white transition-colors">
                 <Linkedin size={20} />
-              </a> */}
+              </a>
             </div>
           </div>
 
